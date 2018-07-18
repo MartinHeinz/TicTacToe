@@ -29,7 +29,7 @@ class TicTacToeTest {
     }
 
     @Test
-    void checkXWonWithVerticalLine() {
+    void checkWinWithVerticalLine() {
         assertEquals(false, t.setCell(0, 6));
         assertEquals(true, t.setCell(0, 0));
         assertEquals(false, t.setCell(0, 0));
@@ -43,7 +43,7 @@ class TicTacToeTest {
     }
 
     @Test
-    void checkOWonWithHorizontalLine() {
+    void checkWinWithHorizontalLine() {
         assertEquals(true, t.setCell(0, 0));
         assertEquals(true, t.setCell(1, 0));
         assertEquals(true, t.setCell(2, 0));
@@ -56,7 +56,7 @@ class TicTacToeTest {
     }
 
     @Test
-    void checkXWonWithDiagonalLine() {
+    void checkWinWithDiagonalLine() {
         assertEquals(true, t.setCell(0, 0));
         assertEquals(true, t.setCell(1, 0));
         assertEquals(true, t.setCell(1, 1));
